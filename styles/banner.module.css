@@ -1,0 +1,24 @@
+/* Estilos del banner */
+.banner {
+    background-image: url("../imagenes/a.jpg");
+    background-size: initial;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .banner p {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  

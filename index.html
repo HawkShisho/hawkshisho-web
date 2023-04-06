@@ -6,7 +6,12 @@
     <title>Nilo Lazo</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/contacto.module.css">
+    <link rel="stylesheet" href="./styles/sobre-mi.module.css">
+    <link rel="stylesheet" href="./styles/navegacion.module.css">
+    <link rel="stylesheet" href="./styles/portafolio.module.css">
+    <link rel="stylesheet" href="./styles/banner.module.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- Barra de navegación -->
@@ -45,22 +50,23 @@
     <section class="portafolio" id="portafolio">
       <div class="contenedor-portafolio">
         <h2>Mis proyectos</h2>
-        <ul >
-          <li>
-            <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
-            <h3>Proyecto 1</h3>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
-            <h3>Proyecto 3</h3>
-          </li>
-        </ul>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+        </div>
     </div>
     </section>
+
+    
 
     <!-- Contacto -->
     <section id="contacto" id="contacto">
@@ -87,5 +93,29 @@
       <p>&copy; 2023 Nilo Lazo. Todos los derechos reservados.</p>
     </footer>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
   </body>
 </html>
+
+<!--<ul >
+          <li>
+            <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+            <h3>Proyecto 3</h3>
+          </li>
+        </ul>--> 

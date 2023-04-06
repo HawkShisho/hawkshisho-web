@@ -1,0 +1,55 @@
+/* Estilos del portafolio */
+.portafolio {
+    background: rgb(80,81,255);
+  background: linear-gradient(0deg, rgba(80,81,255,1) 16%, rgba(0,248,251,1) 100%);
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-portafolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .portafolio h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #000000;
+    
+  }
+  
+  .portafolio h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  .portafolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portafolio li {
+    list-style: none;
+    margin: 20px;
+  }
+  
+  .portafolio img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  
