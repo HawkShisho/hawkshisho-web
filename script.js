@@ -14,23 +14,7 @@ const form = document.querySelector('#contact-form');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-
-  const formData = new FormData(form);
-
-  const xhr = new XMLHttpRequest();
-  xhr.open('POST', form.getAttribute('action'));
-
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      console.log(xhr.responseText);
-      alert('Mensaje enviado correctamente.');
-      form.reset();
-    } else {
-      alert('Error al enviar el mensaje.');
-    }
-  };
-
-  xhr.send(formData);
+  sendEmail()  
 });
 
 /* Navegacion */
@@ -45,3 +29,15 @@ navLinks.forEach(link => {
     section.scrollIntoView({behavior: "smooth"}); // desplaza la página al elemento de la sección correspondiente
   });
 });
+
+/* Correo lol */
+function sendEmail() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var subject = document.getElementById('subject').value;
+  var message = document.getElementById('message').value;
+  
+  var mailtoLink = 'mailto:alonsolazo12345@gmail.com?subject=' + subject + '&body=' + name + ' (' + email + '): ' + message;
+  
+  window.location.href = mailtoLink;
+}
