@@ -1,0 +1,83 @@
+/* Estilos de la sección de contacto */
+#contacto {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(80,81,255,1) 42%);
+    color: #ffffff;
+    padding: 100px 0;
+  }
+  
+  #contacto h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  #contacto p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #contacto .container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  #contact-form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    resize: none;
+  }
+  
+  #contact-form button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  #contact-form button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    #contacto {
+      padding: 50px 0;
+    }
+    
+    #contacto h2 {
+      font-size: 2rem;
+    }
+    
+    #contacto p {
+      font-size: 1rem;
+    }
+    
+    #contact-form label {
+      font-size: 1rem;
+    }
+    
+    #contact-form input,
+    #contact-form textarea {
+      font-size: 1rem;
+    }
+    
+  }
