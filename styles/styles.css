@@ -68,7 +68,7 @@ nav a {
 
 /* Estilos del banner */
 .banner {
-  background-image: url("./imagenes/a.jpg");
+  background-image: url("../imagenes/a.jpg");
   background-size: initial;
   background-position: center;
   height: 500px;
