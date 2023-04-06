@@ -1,0 +1,286 @@
+
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  background-color: #000000;
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: solid;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+}
+
+.logo {
+  padding-left: 1.2rem;
+}
+
+.logo h1{
+  text-decoration: solid;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
+}
+
+#prueba:hover{
+  color:#ff0505;
+}
+
+/* Estilos del banner */
+.banner {
+  background-image: url("./imagenes/a.jpg");
+  background-size: initial;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.banner p {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Estilos de la sección Sobre mí */
+.sobre-mi {
+  background: rgb(0,248,251);
+  background: linear-gradient(0deg, rgba(0,248,251,1) 0%, rgba(255,175,242,1) 100%);
+  height:  100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-sobre-mi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contenedor-sobre-mi img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.texto-sobre-mi {
+  max-width: 600px;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #070606;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.sobre-mi h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2px;
+  color: #000000;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* Estilos del portafolio */
+.portafolio {
+  background: rgb(80,81,255);
+background: linear-gradient(0deg, rgba(80,81,255,1) 16%, rgba(0,248,251,1) 100%);
+  height:  100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-portafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portafolio h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Shadows Into Light', cursive;
+  color: #000000;
+  
+}
+
+.portafolio h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.portafolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.portafolio li {
+  list-style: none;
+  margin: 20px;
+}
+
+.portafolio img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* Estilos de la sección de contacto */
+#contacto {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(80,81,255,1) 42%);
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+#contacto h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#contacto p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contacto .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  resize: none;
+}
+
+#contact-form button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+#contact-form button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #contacto {
+    padding: 50px 0;
+  }
+  
+  #contacto h2 {
+    font-size: 2rem;
+  }
+  
+  #contacto p {
+    font-size: 1rem;
+  }
+  
+  #contact-form label {
+    font-size: 1rem;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 1rem;
+  }
+  
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  font-size: 2rem;
+  font-family: 'Shadows Into Light', cursive;
+}
